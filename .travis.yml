@@ -4,7 +4,7 @@ language: php
 addons:
   apt:
     packages:
-      - libmemcached
+      - libmemcached-dev
 
 php:
   - 7.1
