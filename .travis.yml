@@ -4,6 +4,7 @@ language: php
 addons:
   apt:
     packages:
+      - libc-dev
       - zlib1g-dev
       - libmemcached-dev
 
