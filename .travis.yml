@@ -11,8 +11,8 @@ notifications:
   email: false
 
 before_install:
-  - pecl install -f memcached
-  - composer clear-cache
+ - before_script: echo "extension = memcached.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+ - composer clear-cache
 
 install:
   - composer install --dev
