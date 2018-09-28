@@ -13,8 +13,6 @@ php:
   - master
 
 env:
-#  - MEMCACHED_VERSION="2.0.0"
-#  - MEMCACHED_VERSION="2.2.0"
   - MEMCACHED_VERSION="3.0.0"
   - MEMCACHED_VERSION="3.0.4"
 
@@ -24,8 +22,7 @@ notifications:
   email: false
 
 before_install:
-#  - configure
-  - echo "no --disable-memcached-sasl" | pecl install -f memcached-$MEMCACHED_VERSION --disable-memcached-sasl
+  - echo "no --disable-memcached-sasl" | pecl install -f memcached-$MEMCACHED_VERSION
 
 install:
   - composer install
