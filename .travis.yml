@@ -11,6 +11,7 @@ notifications:
   email: false
 
 before_install:
+  - pecl install memcached
   - composer clear-cache
 
 install:

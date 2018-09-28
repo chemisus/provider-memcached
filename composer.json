@@ -17,10 +17,10 @@
         "src/test",
         "vendor/chemisus/provider/src/test"
       ]
-    },
-    "files": ["src/test/memcached.php"]
+    }
   },
   "require": {
+    "ext-memcached": "~2.2.0 || ~3.0",
     "chemisus/provider": "1.2"
   },
   "require-dev": {
