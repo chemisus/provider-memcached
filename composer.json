@@ -17,11 +17,12 @@
         "src/test",
         "vendor/chemisus/provider/src/test"
       ]
-    },
-    "files": ["src/test/memcached.php"]
+    }
   },
   "require": {
-    "chemisus/provider": "1.2"
+    "php": ">=7.1 <7.3",
+    "ext-memcached": ">=2",
+    "chemisus/provider": "^1"
   },
   "require-dev": {
     "phpunit/phpunit": "^7.3"
