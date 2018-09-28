@@ -25,7 +25,7 @@ notifications:
 
 before_install:
 #  - configure
-  - echo "" | pecl install -f memcached-$MEMCACHED_VERSION --disable-memcached-sasl
+  - echo "no --disable-memcached-sasl" | pecl install -f memcached-$MEMCACHED_VERSION --disable-memcached-sasl
 
 install:
   - composer install
