@@ -1,0 +1,29 @@
+{
+  "name": "chemisus/provider-memcached",
+  "authors": [
+    {
+      "name": "Terrence Howard",
+      "email": "chemisus@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Chemisus\\": "src/main"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Chemisus\\": [
+        "src/test",
+        "vendor/chemisus/provider/src/test"
+      ]
+    },
+    "files": ["src/test/memcached.php"]
+  },
+  "require": {
+    "chemisus/provider": "1.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.3"
+  }
+}
