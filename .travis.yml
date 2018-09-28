@@ -1,6 +1,10 @@
 os: linux
 dist: trusty
 language: php
+addons:
+  apt:
+    packages:
+      - libmemcached
 
 php:
   - 7.1
