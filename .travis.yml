@@ -10,9 +10,9 @@ addons:
       - gcc make autoconf libc-dev pkg-config
 
 php:
-#  - 7.1
-#  - 7.2
-  - master
+  - 7.1
+  - 7.2
+#  - master
 
 env:
   - MEMCACHED_VERSION="3.0.0"
