@@ -5,6 +5,7 @@ addons:
   apt:
     packages:
       - libmemcached-dev
+      - cyrus-sasl-devel
 
 php:
   - 7.1
@@ -23,7 +24,8 @@ notifications:
   email: false
 
 before_install:
-  - echo "" | pecl install -f memcached-$MEMCACHED_VERSION --disable-memcached-sasl
+#  - configure --disable-memcached-sasl
+  - echo "" | pecl install -f memcached-$MEMCACHED_VERSION
 
 install:
   - composer install
