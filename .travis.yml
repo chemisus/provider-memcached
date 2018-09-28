@@ -5,7 +5,7 @@ addons:
   apt:
     packages:
       - libmemcached-dev
-      - cyrus-sasl-devel
+      - cyrus-sasl2
 
 php:
   - 7.1
