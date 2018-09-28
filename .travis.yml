@@ -5,7 +5,6 @@ addons:
   apt:
     packages:
       - libmemcached-dev
-      - libsasl2-dev
 
 php:
   - 7.1
@@ -15,7 +14,6 @@ php:
 env:
   - MEMCACHED_VERSION="3.0.0"
   - MEMCACHED_VERSION="3.0.4"
-
 
 sudo: false
 notifications:
