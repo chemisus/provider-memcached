@@ -7,6 +7,7 @@ addons:
       - libc-dev
       - zlib1g-dev
       - libmemcached-dev
+      - gcc make autoconf libc-dev pkg-config
 
 php:
   - 7.1
